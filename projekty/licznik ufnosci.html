@@ -1,0 +1,503 @@
+<html><head>
+<title>Licznik ufnosci</title>
+</head>
+<body>
+
+
+<h2>
+<p id="instrukcja" onclick="myFunctionINSTR()">Instrukcja rozwiń^</p>
+<p id="instrukcja2" onclick="myFunctionINSTR2()"></p>
+<br>
+<p id="dodaj" onclick="myFunction()">wynik 0</p>
+<p id="dodaj2" onclick="myFunction12()">dodaj 6/5</p>
+<p id="dodaj3" onclick="myFunction06()">dodaj 3/5</p>
+<p id="dodaj4" onclick="myFunction1()">odejmij 1</p>
+<p id="dodaj5" onclick="myFunction05()">odejmij 0.5</p>
+<br>
+<p id="resetuj" onclick="myFunction00()">resetuj</p>
+
+</h2>
+<script>
+var pozioma 
+pozioma = 0
+
+var poziomb 
+poziomb = 0
+
+var poziomam
+poziomam = 0
+
+var poziombm
+poziombm = 0
+
+var skala
+skala = 1
+
+var INSTR
+INSTR = 0
+
+var INSTRpentla
+INSTRpentla = 0
+
+
+
+//p dodaj do html
+//<p id="skala" onclick="skalaminus()">skala minus</p>
+//function skalaminus() {
+//    skala = 0
+
+//}
+//instrukcja
+function myFunctionINSTR() {
+
+
+if (INSTR==0 && INSTRpentla==0 ) {
+     INSTR = 1
+     INSTRpentla = 1
+
+    document.getElementById("instrukcja").innerHTML = "Instrukcja zwiń> ";
+    document.getElementById("instrukcja2").innerHTML = "<h5>" + "<br>" +
+"ŁK16,9-10"
++ "<br>"+
+"aby gdy [wszystko] się skończy, przyjęto was do wiecznych przybytków."
++ "<br>"+
+"Kto w drobnej rzeczy jest wierny, ten i w wielkiej będzie wierny"
++ "<br>"
++ "<br>"+
+"Możemy naliczać to co się dzieje nam fajnego"
++ "<br>"+
+"w postaci dawania plusów i minusów"
++ "<br>"+
+"które zapiszemy np.:w notesiku"
++ "<br>"+
+"a potem realizować jakimiś poznanymi nam sposobami np.:"
++ "<br>"+
+"-ilość medytacji czy dziękowania nieskończoności w myślach"
++ "<br>"+
+"-ilość bułek dla gołębi :)"
++ "<br>"+
+"-ilość drobnych dla bezdomnych"
++ "<br>"+
+"-ilość słuchania dzwięków solfeggio"
++ "<br>"+
+"-albo samemu coś wymyśleć"
++ "<br>"
++ "<br>"+
+"ważne by podświadomość nasza czy kogoś tego chciała"
++ "<br>"+
+"dlatego warto daną czynność robić często a więcej dopiero po naliczeniu"
++ "<br>"
++ "<br>"+
+"program ten to dodatek procesu polegającego na zapisywaniu w notesie"
++ "<br>"+
+"plusów małych i dużych oraz minusów małych i dużych"
++ "<br>"+
+"a potem klikaniu w tym programie tyle razy ile ma się plusów i minusów a małych i dużych"
++ "<br>"+
+"gdzie jeden plus nie jest równy jednemu minusowi"
++ "<br>"+
+"by podświadomość nie równoważyła ich czyli jednego co chcemy z jednym czego nie chcemy"
++ "<br>"+ "</h5>"
+;
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+}
+if (INSTR==1 && INSTRpentla==0) {
+
+     INSTR = 0
+     INSTRpentla = 1
+
+    document.getElementById("instrukcja").innerHTML = "Instrukcja rozwiń^ ";
+    document.getElementById("instrukcja2").innerHTML = "";
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+}
+INSTRpentla = 0
+}
+
+//resetuj
+function myFunction00() {
+
+
+pozioma = 0 
+poziomb = 0
+poziomam = 0
+poziombm = 0
+skala = 1
+
+
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+}
+
+//dodaj1,2
+function myFunction12() {
+if (skala==1) {
+    pozioma += 1
+    poziomb += 2
+
+
+
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+
+
+
+if (poziomb>=10) {
+
+    pozioma += 1
+    poziomb -= 10
+
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+
+}
+}
+
+//skala minus_dodaj1,2
+if (skala==0) {
+    poziomam += 1
+    poziombm += 2
+
+
+
+    document.getElementById("dodaj").innerHTML = "wynik " + "- " +poziomam + "." + poziombm;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+    document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+
+
+if (poziombm>=10) {
+
+    poziomam += 1
+    poziombm -= 10
+
+    document.getElementById("dodaj").innerHTML = "wynik " + "- "  + poziomam + "." + poziombm;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+
+}
+}
+if (skala==1 && pozioma<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+       document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && pozioma<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+        document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==1 && poziomam<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+       document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && poziomam<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+        document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+}
+//dodaj 0,6
+
+
+
+function myFunction06() {
+if (skala==1) {
+    pozioma += 0
+    poziomb += 6
+   document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+   document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+   document.getElementById("dodaj3").innerHTML = "dodaj 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+
+if (poziomb>=10) {
+    pozioma += 1
+    poziomb -= 10
+
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+
+}
+
+
+}
+//skala minus_dodaj 0,6
+if (skala==0) {
+    poziomam += 0
+    poziombm += 6
+   document.getElementById("dodaj").innerHTML = "wynik " + "- " + poziomam + "." + poziombm;
+   document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+   document.getElementById("dodaj3").innerHTML = "odejmij 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+
+if (poziombm>=10) {
+    poziomam += 1
+    poziombm -= 10
+
+    document.getElementById("dodaj").innerHTML = "wynik "  + "- " + poziomam + "." + poziombm;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+
+}
+}
+if (skala==1 && pozioma<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+       document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && pozioma<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+     document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==1 && poziomam<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+      document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && poziomam<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+     document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+}
+
+//odejmij 1
+
+function myFunction1() {
+if (skala==1) {
+    pozioma -= 1
+
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+}
+//skala minus_odejmij 1
+if (skala==0) {
+    poziomam -= 1
+
+    document.getElementById("dodaj").innerHTML = "wynik " + "- " + poziomam + "." + poziombm;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+    document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+}
+if (skala==1 && pozioma<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+     document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && pozioma<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+       document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==1 && poziomam<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+        document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && poziomam<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+       document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+}
+
+//odejmij 0,5
+
+function myFunction05() {
+if (skala==1) {
+poziomb -= 5
+
+if (poziomb<0 ) {
+
+    pozioma -= 1
+    poziomb += 10
+}
+    document.getElementById("dodaj").innerHTML = "wynik " + pozioma + "." + poziomb;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+}
+//skala minus_odejmij 0,5
+if (skala==0) {
+poziombm -= 5
+
+if (poziombm<0 ) {
+
+    poziomam -= 1
+    poziombm += 10
+}
+    document.getElementById("dodaj").innerHTML = "wynik " + "- "  + poziomam + "." + poziombm;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5" ;
+    document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+}
+if (skala==1 && pozioma<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+      document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && pozioma<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+      document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==1 && poziomam<0) {
+skala = 0
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- minusowy" ;
+    document.getElementById("dodaj2").innerHTML = "odejmij 6/5";
+    document.getElementById("dodaj3").innerHTML = "odejmij 3/5";
+       document.getElementById("dodaj4").innerHTML = "dodaj 1";
+    document.getElementById("dodaj5").innerHTML = "dodaj 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+if (skala==0 && poziomam<0) {
+skala = 1
+    document.getElementById("dodaj").innerHTML = "wynik bliski zeru- dodatni" ;
+    document.getElementById("dodaj2").innerHTML = "dodaj 6/5";
+    document.getElementById("dodaj3").innerHTML = "dodaj 3/5";
+        document.getElementById("dodaj4").innerHTML = "odejmij 1";
+    document.getElementById("dodaj5").innerHTML = "odejmij 0.5";
+    pozioma = 0
+    poziomb = 0
+    poziomam = 0
+    poziombm = 0
+}
+}
+</script>
+</body>
+</html>
