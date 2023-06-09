@@ -1,0 +1,135 @@
+﻿
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+
+<meta http-equiv="Content-Language" content="pl" />
+	
+</head>
+
+
+
+
+<body link="#000000" vlink="#000080" alink="#0000FF"  bgcolor="#808080">
+
+
+
+
+<br /><br /><br />
+<a target="okno" href="pierwsza.html">Pierwsza strona </a>
+<br /><br />
+Fantazyjni
+<br />
+<a target="okno" href="http://dysk.onet.pl/link/83rWa#./Fantazyjnicz1.htm">cz.1 </a>
+
+<a target="okno" href="http://dysk.onet.pl/link/83rWa#./Fantazyjnicz2.htm">cz.2 </a>
+
+<a target="okno" href="http://dysk.onet.pl/link/83rWa#./Fantazyjnicz3.htm">cz.3 </a>
+
+<a target="okno" href="http://dysk.onet.pl/link/83rWa#./Fantazyjnicz4.htm">cz.4 </a>
+
+
+<br /><br />
+Niebo nocy i brzasku
+<br />
+<a target="okno" href="Niebonocyibrzaskucz1.htm">cz.1 </a>
+
+<a target="okno" href="Niebonocyibrzaskucz2.htm">cz.2 </a>
+
+<a target="okno" href="Niebonocyibrzaskucz3.htm">cz.3 </a>
+
+<a target="okno" href="Niebonocyibrzaskucz4.htm">cz.4 </a>
+
+
+<br /><br />
+Las myśli
+<br />
+<a target="okno" href="Lasmyślicz1.htm">cz.1 </a>
+
+<a target="okno" href="Lasmyślicz2.htm">cz.2 </a>
+
+<a target="okno" href="Lasmyślicz3.htm">cz.3 </a>
+
+<a target="okno" href="Lasmyślicz4.htm">cz.4 </a>
+
+
+<br /><br />
+Poszukiwania uniwersum
+<br />
+<a target="okno" href="Poszukiwaniauniwersumcz1.htm">cz.1 </a>
+
+<a target="okno" href="Poszukiwaniauniwersumcz2.htm">cz.2 </a>
+
+<a target="okno" href="Poszukiwaniauniwersumcz3.htm">cz.3 </a>
+
+<a target="okno" href="Poszukiwaniauniwersumcz4.htm">cz.4 </a>
+
+
+<br /><br />
+Przez mistyczne
+<br />
+<a target="okno" href="Przezmistycznecz1.htm">cz.1 </a>
+
+<a target="okno" href="Przezmistycznecz2.htm">cz.2 </a>
+
+<a target="okno" href="Przezmistycznecz3.htm">cz.3 </a>
+
+<a target="okno" href="Przezmistycznecz4.htm">cz.4 </a>
+
+<br /><br />
+Dotykanie dróg
+<br />
+<a target="okno" href="Dotykaniedrógcz1.htm">cz.1 </a>
+
+<a target="okno" href="Dotykaniedrógcz2.htm">cz.2 </a>
+
+<a target="okno" href="Dotykaniedrógcz3.htm">cz.3 </a>
+
+<a target="okno" href="Dotykaniedrógcz4.htm">cz.4 </a>
+
+
+<br /><br />
+Bezpieczna pasja
+<br />
+<a target="okno" href="Bezpiecznapasjacz1.htm">cz.1 </a>
+
+<a target="okno" href="Bezpiecznapasjacz2.htm">cz.2 </a>
+
+<a target="okno" href="Bezpiecznapasjacz3.htm">cz.3 </a>
+
+<a target="okno" href="Bezpiecznapasjacz4.htm">cz.4 </a>
+
+
+<br /><br />
+Odpowiedź wśród mocy
+<br />
+<a target="okno" href="Odpowiedźwśródmocycz1.htm">cz.1 </a>
+
+<a target="okno" href="Odpowiedźwśródmocycz2.htm">cz.2 </a>
+
+<a target="okno" href="Odpowiedźwśródmocycz3.htm">cz.3 </a>
+
+<a target="okno" href="Odpowiedźwśródmocycz4.htm">cz.4 </a>
+
+
+<br /><br />
+Podróżą mglistą szukamy siebie
+<br />
+<a target="okno" href="Podróżąmglistąszukamysiebiecz1.htm">cz.1 </a>
+
+<a target="okno" href="Podróżąmglistąszukamysiebiecz2.htm">cz.2 </a>
+
+<a target="okno" href="Podróżąmglistąszukamysiebiecz3.htm">cz.3 </a>
+
+<a target="okno" href="Podróżąmglistąszukamysiebiecz4.htm">cz.4 </a>
+
+<a target="okno" href="Podróżąmglistąszukamysiebiecz5.htm">cz.5 </a>
+<br /><br />
+
+
+</body>
+</html>
