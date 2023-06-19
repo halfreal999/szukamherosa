@@ -279,7 +279,7 @@
 
 <!--baner gorny-->
 <div style=" position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;">
-<table  border=0 HEIGHT=120 WIDTH=100%  background="grafika/baner.gif">
+<table  border=0 HEIGHT=200 WIDTH=100%  background="grafika/baner.gif">
 <td>
 </td>
 </table>
@@ -287,11 +287,11 @@
 
 <!--baner dolny-->
 <div style=" position: absolute;  top: 0px; left:0px; right: 0px; bottom: 0px;">
-<table  border=0 HEIGHT=1730 WIDTH=100% >
+<table  border=0 HEIGHT=1790 WIDTH=100% >
 <td>
 </td>
 </table>
-<table  border=0 HEIGHT=80 WIDTH=100%  background="grafika/baner.gif">
+<table  border=0 HEIGHT=120 WIDTH=100%  background="grafika/baner.gif">
 <td>
 </td>
 </table>
@@ -301,20 +301,20 @@
 <!--pasek plywajacy 1-->
 <div style=" position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;">
 <MARQUEE BEHAVIOR=scroll LOOP=1 DIRECTION=LEFT HEIGHT=100% WIDTH=100% HSPACE=0 VSPACE=0 SCROLLAMOUNT=16 SCROLLDELAY=1  >
-<img src="grafika/pasek.gif" HEIGHT=1000 WIDTH=8>
+<img src="grafika/pasek.gif" HEIGHT=1900 WIDTH=8>
 </MARQUEE>
 </div>
 
 <!--pasek plywajacy 2-->
 <div style=" position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;">
 <MARQUEE BEHAVIOR=scroll LOOP=1 DIRECTION=right HEIGHT=100% WIDTH=100% HSPACE=0 VSPACE=0 SCROLLAMOUNT=13 SCROLLDELAY=1  >
-<img src="grafika/pasek.gif" HEIGHT=1000 WIDTH=8>
+<img src="grafika/pasek.gif" HEIGHT=1900 WIDTH=8>
 </MARQUEE>
 </div>
 
 <!--pasek plywajacy 3-->
 <div style=" position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;">
-<MARQUEE BEHAVIOR=scroll LOOP=1 DIRECTION=down HEIGHT=100% WIDTH=100% HSPACE=0 VSPACE=0 SCROLLAMOUNT=8 SCROLLDELAY=1  >
+<MARQUEE BEHAVIOR=scroll LOOP=1 DIRECTION=down HEIGHT=1900 WIDTH=100% HSPACE=0 VSPACE=0 SCROLLAMOUNT=8 SCROLLDELAY=1  >
 <table  border=0 HEIGHT=8 WIDTH=100% BGCOLOR=black  background="grafika/pasek.gif">
 <td>
 </td>
@@ -1401,7 +1401,7 @@
 </div>
 
 <!--tlo do czytania-->
-<div style=" position: absolute; left: 10%; top: 121px; right: 10%; bottom: 0px; opacity: 0.5;">
+<div style=" position: absolute; left: 10%; top: 181px; right: 10%; bottom: 0px; opacity: 0.5;">
 <table  border=0 HEIGHT=1630 WIDTH=100%>
 
 <td HEIGHT=790 width=100% BGCOLOR=white>
@@ -1409,10 +1409,17 @@
 </table>
 </div>
 
+<!--menuklasyczne-->
+
+
 <!--tresc-->
 
 <div style=" position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;">
-<br>
+<!--menuklasyczne-->
+<iframe src="menuklasyczneclose.html" width="100%" height="80" frameborder="0" atrybut name="menuklasyczne" >
+
+    </iframe>
+
 <center>
 <TABLE BORDER=0  HEIGHT=80>  
 <td>
@@ -1478,7 +1485,9 @@ link 1
 
 <TABLE BORDER=0 BGCOLOR=blue>  
 <td>
+<a  target="menuklasyczne" href="menuklasyczneclose.html" >
 <p style="font-size:200%" id="menu" onclick="myFunctionmenu()">menu</p>
+</a>
 </td>
 </TABLE>
 <TABLE BORDER=0 >  
@@ -1519,6 +1528,7 @@ link = 0
 <script src="jsmenutelefon.js"></script> 
 
 </div>
+
 
 
 
