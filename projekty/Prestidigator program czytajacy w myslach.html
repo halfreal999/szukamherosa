@@ -137,6 +137,9 @@ dlaczego by nie?<br>
 var generowana 
 generowana = 0
 
+var proba
+proba = 0
+
 function myFunction0() {
 generowana = 4
 
@@ -239,8 +242,35 @@ generowana = 1
 
 function myFunction10() {
 
-    document.getElementById("tresc").innerHTML = "myślałeś raczej o liczbie" + generowana + "<br>" + "kliknij znów generowanie by jeszcze raz spróbować";
-    document.getElementById("obliczone").innerHTML = "";
+proba += 1
+   
+  
+
+if (proba==1 ) {
+
+
+
+    document.getElementById("tresc").innerHTML = "wynik o którym myślałeś to " + generowana + "<br>" + "kliknij znów generowanie by jeszcze raz spróbować" +
+"<br>" + "<br>" + "!!!SPRÓBUJ Kilka razy";
+
+}
+
+if ( proba==2) {
+
+    document.getElementById("tresc").innerHTML = "wynik o którym myślałeś to " + generowana + "<br>" + "kliknij znów generowanie by jeszcze raz spróbować" +
+"<br>" + "<br>" + "!!!SPRÓBUJ Kilka razy";
+
+}
+
+
+if ( proba>2) {
+
+        document.getElementById("tresc").innerHTML = "wynik o którym myślałeś to " + generowana + "<br>" + "kliknij znów generowanie by jeszcze raz spróbować" +
+"<br>" + "<br>" + "!!!TO SZTUCZKA iluzjonistyczna!!! i piękno matematyki" + "<br>" + "idea którą tu używam " + "<br>" + "działa zawsze gdy działa matematyka!!!";
+
+}
+
+  document.getElementById("obliczone").innerHTML = "";
 
 }
 </script>
